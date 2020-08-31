@@ -1,0 +1,357 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica,sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+}
+/* Nav
+=======================================*/
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #4D98A3;
+}
+.header-mobile{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 30px;
+    max-width: 1280px;
+    background: #4D98A3;
+}
+.hamburger{
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+}
+.hamburger:before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+}
+.hamburger:after{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+}
+.header__logo {
+    font-size: calc(15px + 2vw);
+    color: #ffffff;
+    font-family: 'Cherry Swash', cursive;
+    font-weight: 400;
+}
+
+.nav__link {
+    display: inline-flex;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #DCE3E4;
+    font-weight: 300;
+}
+.nav__link:not(:last-of-type)::after{
+    content: '';
+    position: relative;
+    top: 3px;
+    width: 2px;
+    height: 16px;
+    margin: 0 20px;
+    background-color: #ffffff;
+    transform: rotate(27deg);
+}
+/* Main
+=======================================*/
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background: url(../img/sea.jpeg) no-repeat center center;
+    padding-top: 17px;
+    align-items: center;
+}
+
+.main__title {
+    margin-top: 129px;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #E4E4E4;
+    font-weight: 700;
+}
+
+.main__link {
+    width: 234px;
+    height: 47px;
+    margin-top: 46px;
+    font-size: 30px;
+    background: transparent;
+    border-color: #fff;
+    color: #E4E4E4;
+    font-weight: 300;
+}
+
+
+.circle {
+    display: flex;
+    justify-content: center;
+    margin-top: 121px;
+    margin-bottom: 40px;
+}
+
+.main__circle {
+    width: 9px;
+    height: 9px;
+    background: #fff;
+    border-radius: 50%;
+    margin: auto 6px;
+}
+
+.main__circle:hover {
+    width: 9px;
+    height: 9px;
+    background: #69728C;
+    border-radius: 50%;
+    margin: auto 6px;
+}
+/*Explore
+=======================================*/
+
+.explore__content {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content__title {
+    font-family: Helvetica, sans-serif;
+    margin-top: 90px;
+    font-size: 30px;
+    color: #4C505D;
+    font-weight: 300;
+    text-align: center;
+}
+
+.content__text {
+    font-family: Helvetica, sans-serif;
+    max-width: 870px;
+    margin-top: 39px;
+    margin-bottom: 73px;
+    font-size: 14px;
+    color: #4C505D;
+    font-weight: 300;
+    text-align: center;
+}
+
+.explore__icon {
+    max-width: 420px;
+    width: 100%;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon__basket {
+    width: 51px;
+    height: 51px;
+    margin: 0 6%;
+}
+
+.icon__planet {
+    width: 51px;
+    height: 51px;
+    margin: 0 6%;
+}
+
+.icon__suitcase {
+    width: 51px;
+    height: 51px;
+    margin: 0 6%;
+}
+/* Main  Testimonial
+=======================================*/
+
+.naming__testimonial {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #00D089;
+}
+
+.testimonial__user {
+    margin-top: 67px;
+    margin-bottom: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user__icon {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    background: url(../img/avatar.png) no-repeat center center;
+}
+
+.user__name {
+    font-size: 26px;
+    margin: 0 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.name {
+    transform: scaleX(-1) translateX(-10px) translateY(-70px) ;
+    color: #fff;
+    opacity: .2;
+    font-size:360px;
+    height: 100px;
+    font-weight: 700;
+}
+
+.testimonial__text {
+    line-height: 38px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 80px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+}
+/* Main Contact
+=======================================*/
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding-top: 51px;
+    padding-bottom: 34px;
+    width: 100%;
+    background: url(../img/map.jpeg) no-repeat center center;
+}
+
+.contact__form {
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    opacity: .8;
+    width: 430px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact{
+    align-items: center;
+}
+
+.contact__name {
+    width: 64%;
+    height: 32px;
+    margin-top: 100px;
+    margin-bottom: 14px;
+}
+
+.contact__email {
+    width: 64%;
+    height: 32px;
+    margin-bottom: 14px;
+}
+
+.contact__message {
+    width: 64%;
+    height: 81px;
+}
+
+.contact__mark {
+    position: relative;
+    width: 67px;
+    height: 67px;
+    background: #00D089;
+    opacity: 1;
+    border-radius: 50%;
+    margin: 32px auto 45px;
+}
+
+.check-sign {
+    position: absolute;
+    background: #fff;
+}
+
+.check-sign {
+    position: absolute;
+    background: #fff;
+}
+
+.check {
+    width: 25px;
+    height: 10px;
+    transform: rotate(45deg);
+    left: 11px;
+    top: 35px;
+    border-radius: 15%;
+}
+
+.part {
+    width: 40px;
+    height: 10px;
+    transform: rotate(-45deg);
+    left: 20px;
+    top: 30px;
+    border-radius: 10%;
+}
+
+/* Footer
+=======================================*/
+
+.footer {
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    background: #00D089;
+}
+
+.footer__text {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+}
+
+

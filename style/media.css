@@ -1,0 +1,57 @@
+@media (max-width: 768px) {
+    .header {
+        display: none;
+    }
+    .header-mobile {
+        display: flex;
+    }
+    .testimonial__text {
+        line-height: 38px;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        padding-bottom: 80px;
+        font-size: 15px;
+        color: #fff;
+        font-weight: 300;
+    }
+
+}
+@media (max-width: 430px) {
+    .contact__form {
+        text-align: center;
+        background: #fff;
+        border-radius: 50%;
+        opacity: .8;
+        width: 300px;
+        height: 300px;
+    }
+    .contact__name {
+        width: 64%;
+        height: 32px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .contact__email {
+        width: 64%;
+        height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .contact__message {
+        margin-bottom: 20px;
+        width: 64%;
+        height: 44px;
+    }
+
+    .contact__mark {
+        position: relative;
+        width: 67px;
+        height: 67px;
+        background: #00D089;
+        opacity: 1;
+        border-radius: 50%;
+        margin: 10px auto 30px;
+    }
+}
